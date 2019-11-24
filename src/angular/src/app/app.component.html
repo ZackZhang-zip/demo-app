@@ -1,0 +1,33 @@
+<div class="container-fluid d-flex w-100 h-100 flex-column" style="padding: 0;">
+<header style="height: 7vh;">
+  <nav class="navbar navbar-expand-md bg-light h-100">
+    <a class="navbar-brand" href="#">Carousel</a>
+    <button class="navbar-toggler" type="button" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['home']">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['demo1']">demo1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['demo2']">demo2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['demo3']">demo3</a>
+        </li>
+      </ul>
+      <div class="form-inline mt-2 mt-md-0" style="color: black;">
+        user name ---
+      </div>
+    </div>
+  </nav>
+</header>
+<main style="height: 93vh;">
+  <router-outlet></router-outlet>
+</main>
+<footer></footer>
+</div>

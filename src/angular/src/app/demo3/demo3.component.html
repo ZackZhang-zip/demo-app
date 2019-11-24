@@ -1,0 +1,15 @@
+<div style="height: 100%;">
+  <div class="container">
+    <div class="row">
+      <div>
+          <label for="fUp" class="btn btn-primary">select</label>
+        <form [formGroup]="myForm" (ngSubmit)="uploadFile()">
+          <input name="file" style="display: none;" id="fUp" #fup (change)="selectFile($event)" type="file" />
+          <button class="btn btn-info">upload</button>
+        </form>
+        <div>{{selectedFile?.name}}</div>
+      </div>
+    </div>
+  </div>
+
+</div>
