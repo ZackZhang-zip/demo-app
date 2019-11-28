@@ -1,4 +1,4 @@
-<div id="demoTypehead">
+<div id="forTypehead">
   <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" [resultTemplate]="rt" [inputFormatter]="formatter" />
   <pre>Model: {{ model | json }}</pre>
   <ng-template #rt let-r="result" let-t="term">
@@ -7,6 +7,21 @@
   </ng-template>
 </div>
 
-<div>
+<div id="forDorpdown">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>Action - 1</button>
+        <button ngbDropdownItem>Another Action</button>
+        <button ngbDropdownItem>Something else is here</button>
+      </div>
+    </div>
+</div>
+
+<div id="forModalWindow">
   <button class="btn" (click)="openWindow()">open</button>
 </div>
+
+<p>123123123</p>
+<p>abcabcabc</p>
+<p>zzzzzzzzz</p>

@@ -11,6 +11,7 @@ import { Demo3Component } from './demo3/demo3.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { ChildNodeComponent } from './child-node/child-node.component';
+import { Demo4Component } from './demo4/demo4.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ChildNodeComponent } from './child-node/child-node.component';
     Demo2Component,
     Demo3Component,
     HomeComponent,
-    ChildNodeComponent
+    ChildNodeComponent,
+    Demo4Component
   ],
   imports: [
     NgbModule,
