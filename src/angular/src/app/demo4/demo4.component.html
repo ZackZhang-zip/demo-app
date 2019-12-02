@@ -1,5 +1,14 @@
-<div>
-    
-    <div id='container' style='width:800px; height:600px;'></div>
-    
+
+<div class="d-inline-flex w-100" style="overflow-x: hidden;">
+    <div id="div1" style="width: 50px; background-color: yellow;" (click)="showBox()"></div>
+    <div id='container' style='width: calc(100% - 50px); height:600px;'>
+        <div id="div2" style="width:150px; height:100%;left:-150px;top:0px;position: relative;z-index: 30; background-color: white;">
+            <button (click)="smallMap()">123</button>
+        </div>
+    </div>
+    <div id="div3" style="width:0px; background-color: red;">
+        <button (click)="largeMap()">123</button>
+        <div>123123123</div>
+        <select><option selected>123</option></select>
+    </div>
 </div>
